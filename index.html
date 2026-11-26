@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishika Choudhary — UI/UX &amp; Product Designer</title>
+  <meta name="description" content="Personal product design portfolio of Rishika Choudhary, UI/UX & Product Designer based in Bengaluru, India." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Mobile compact top bar -->
+  <header class="mobile-header" aria-label="Mobile Navigation">
+    <div class="mobile-brand">
+      <span class="brand-breathe-dot" aria-hidden="true"></span>
+      <span class="mobile-brand-name">rishika</span>
+    </div>
+    <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle"
+      aria-expanded="false" aria-controls="sidebar" aria-label="Open navigation menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </header>
+
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+  <div class="toast-banner" id="copyToast" role="status" aria-live="polite" hidden>Discord username copied</div>
+
+  <div class="layout">
+
+    <!-- =====================================================================
+         FIXED LEFT SIDEBAR
+         ===================================================================== -->
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+
+        <div class="sidebar-identity">
+          <div class="sidebar-name-row">
+            <span class="brand-breathe-dot" aria-hidden="true"></span>
+            <span class="sidebar-name">rishika</span>
+          </div>
+          <p class="sidebar-role">UI/UX &amp; Product Designer</p>
+          <p class="sidebar-bio">Designing thoughtful digital experiences and simplifying complex user problems.</p>
+        </div>
+
+        <div class="sidebar-portrait-wrap">
+          <img src="assets/images/portrait.jpg" alt="Portrait of Rishika Choudhary" class="sidebar-portrait" loading="eager" />
+        </div>
+
+        <!-- Navigation — 4 items, hash-based routing -->
+        <nav class="sidebar-nav-card" aria-label="Primary Navigation">
+          <ul class="sidebar-nav-list">
+            <li>
+              <a href="#home" class="sidebar-nav-link is-active" data-route="home">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span class="nav-num">01</span>
+                <span class="nav-label">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="sidebar-nav-link" data-route="projects">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span class="nav-num">02</span>
+                <span class="nav-label">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#work" class="sidebar-nav-link" data-route="work">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span class="nav-num">03</span>
+                <span class="nav-label">Work</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="sidebar-nav-link" data-route="contact">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span class="nav-num">04</span>
+                <span class="nav-label">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social icons -->
+        <div class="sidebar-connect">
+          <p class="sidebar-connect-label">let's connect</p>
+          <div class="sidebar-social-row">
+            <a href="https://www.linkedin.com/in/rishika-choudhary-072a51272/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://dribbble.com/R_Choudhary" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Dribbble" title="Dribbble">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm7.885 5.53a10.227 10.227 0 0 1 2.357 6.382c-.348-.072-3.83-.778-7.34-.336-.074-.176-.145-.354-.223-.532a27.97 27.97 0 0 0-.697-1.458c3.875-1.578 5.636-3.84 5.903-4.056zM12 1.77a10.2 10.2 0 0 1 6.727 2.523c-.226.185-1.825 2.266-5.515 3.694-1.7-3.11-3.588-5.657-3.888-6.051A10.253 10.253 0 0 1 12 1.77zM7.394 2.86c.29.383 2.138 2.93 3.854 5.984-4.862 1.292-9.152 1.268-9.607 1.263A10.258 10.258 0 0 1 7.394 2.86zM1.756 12.01v-.313c.438.009 5.479.08 10.67-1.466.298.582.58 1.174.84 1.773-.134.038-.27.078-.404.12-5.318 1.718-8.152 6.404-8.382 6.803a10.18 10.18 0 0 1-2.724-6.917zM12 22.244a10.17 10.17 0 0 1-6.29-2.167c.184-.38 2.687-4.812 8.07-6.517.03-.01.057-.018.086-.027a37.39 37.39 0 0 1 2.094 7.775A10.175 10.175 0 0 1 12 22.244zm5.676-1.737a39.158 39.158 0 0 0-1.933-7.434c3.133-.497 5.878.316 6.22.426a10.236 10.236 0 0 1-4.287 7.008z"/></svg>
+            </a>
+            <a href="https://www.behance.net/rishikachoudha3" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Behance" title="Behance">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+            </a>
+            <a href="https://x.com/RishikaCho81977" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="X (Twitter)" title="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <button type="button" class="social-icon-link discord-copy-btn" data-discord="rishikarc"
+              aria-label="Copy Discord username rishikarc" title="Copy Discord username: rishikarc">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </button>
+            <a href="mailto:rishikarchoudhary@gmail.com" class="social-icon-link" aria-label="Email" title="rishikarchoudhary@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- =====================================================================
+         MAIN CONTENT — pages swapped by router
+         ===================================================================== -->
+    <main class="main-content" id="mainContent" aria-live="polite">
+
+      <div class="vertical-copyright" aria-hidden="true">2026 &copy; &mdash; RISHIKA CHOUDHARY</div>
+
+      <!-- PAGE: HOME -->
+      <div class="page" id="page-home">
+        <section class="hero-section" aria-label="Introduction">
+          <div class="hero-top">
+            <h1 class="hero-display-name">RISHIKA CHOUDHARY</h1>
+            <p class="hero-intro">
+              <strong class="intro-strong">I design thoughtful digital experiences</strong>
+              <span class="intro-highlight">that make complex interactions feel simple.</span>
+              I enjoy solving real user problems through research, interaction design and intuitive interfaces.
+            </p>
+          </div>
+
+          <div class="hero-lower">
+            <div class="hero-col-left">
+              <div class="meta-label">
+                <span class="sage-dot-sm" aria-hidden="true"></span>
+                <span>DESIGN PHILOSOPHY</span>
+              </div>
+              <h2 class="philosophy-heading">Clarity over clutter.</h2>
+              <p class="philosophy-copy">I believe great design makes complex things feel simple, useful and effortless.</p>
+              <div class="hero-cta-group">
+                <a href="#projects" class="btn btn-primary js-nav-link" data-route="projects">
+                  <span>View my projects</span><span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary js-nav-link" data-route="contact">
+                  <span>Get in touch</span><span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-col-right">
+              <div class="meta-label">
+                <span class="sage-dot-sm" aria-hidden="true"></span>
+                <span>CONNECT &amp; LOCATION</span>
+              </div>
+              <div class="hero-links-list">
+                <a href="mailto:rishikarchoudhary@gmail.com" class="hero-row-link">
+                  <span>rishikarchoudhary@gmail.com</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://www.behance.net/rishikachoudha3" target="_blank" rel="noopener noreferrer" class="hero-row-link">
+                  <span>behance &middot; dribbble</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
+              <div class="hero-badge-row">
+                <span class="pastel-badge">1+ YEARS OF EXPERIENCE</span>
+                <span class="location-tag">BENGALURU, INDIA</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- PAGE: PROJECTS -->
+      <div class="page" id="page-projects" hidden>
+        <section class="page-section" aria-label="Projects">
+          <div class="page-header">
+            <div class="meta-label">
+              <span class="sage-dot-sm" aria-hidden="true"></span>
+              <span>02 / SELECTED WORK</span>
+            </div>
+            <h2 class="page-title">Projects &amp; Case Studies</h2>
+            <p class="page-subtitle">UI/UX product design explorations — from mobile banking and travel to fitness and pet care.</p>
+          </div>
+
+          <!-- Category: UI/UX & Product Design -->
+          <div class="cat-label-row">
+            <span class="cat-label-text">UI/UX &amp; Product Design</span>
+          </div>
+
+          <div class="projects-grid">
+
+            <!-- 01 Northfield -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/northfield-cover.png" alt="Northfield Mobile Banking project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">01</span>
+                  <span class="project-cat-pill">Mobile Banking</span>
+                </div>
+                <h3 class="project-title">Northfield</h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">Mobile banking users need a clear and convenient way to manage everyday financial activities without navigating complicated interfaces.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A mobile banking experience designed around accessible financial information and straightforward banking interactions, guiding new members through their first 90 days.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Aims to make everyday banking tasks easier to understand and manage through a more intuitive onboarding and account-management interface.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/258571483/Northfield-Mobile-Banking" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 02 hop -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/hop-cover.png" alt="hop Shared Airport Cab App project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">02</span>
+                  <span class="project-cat-pill">Shared Airport Cab</span>
+                </div>
+                <h3 class="project-title">hop</h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">Airport travellers need a convenient way to find and coordinate shared cab rides, making airport transportation easier to plan and more affordable.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A shared airport cab booking experience with pool, women-only, and solo ride options — helping travellers discover and coordinate suitable rides through a streamlined interface.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Aims to simplify airport commute planning and make shared transportation more convenient and cost-effective for everyday travellers.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/258552567/Hop-Shared-Airport-Cab-App-UIUX-Case-Study" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 03 Voya -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/voya-cover.png" alt="Voya Travel App project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">03</span>
+                  <span class="project-cat-pill">Travel App</span>
+                </div>
+                <h3 class="project-title">Voya</h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">Planning a trip involves managing bookings, travel documents, itineraries and communication across different apps, making the journey difficult to organise.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A travel companion app combining curated packages, document storage, personalised checklists, itineraries, group chats, smart reminders and SOS features in one place.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Creates a more organised and connected travel experience, helping travellers manage journeys with greater confidence and less fragmentation.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/228704761/Voya-Travel-App-UIUX-Casestudy" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 04 PetNest -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/petnest-cover.png" alt="PetNest Pet Care App project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">04</span>
+                  <span class="project-cat-pill">Pet Care App</span>
+                </div>
+                <h3 class="project-title">PetNest</h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">Pet parents often manage grooming, vaccinations, deworming, everyday essentials and caretaker services across multiple platforms — creating fragmented, stressful workflows.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A mobile pet-care experience combining pet profiles, health reminders, service bookings, an online store, caretaker hiring and payment tracking in one organised app.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Aims to simplify pet parenting by bringing essential care activities and services into a single, accessible experience.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/225611419/PetNest-Pet-Care-App-UIUX-Casestudy" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+          </div><!-- /projects-grid row 1 -->
+
+          <!-- Category: Dashboard & Web Design -->
+          <div class="cat-label-row cat-label-row--spaced">
+            <span class="cat-label-text">Dashboard &amp; Web Design</span>
+          </div>
+
+          <div class="projects-grid">
+
+            <!-- 05 FitTrack Website -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/fittrack-website-cover.png" alt="FitTrack Responsive Website project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">05</span>
+                  <span class="project-cat-pill">Responsive Website</span>
+                </div>
+                <h3 class="project-title">FitTrack <span class="project-title-sub">Website</span></h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">People need an accessible way to monitor fitness goals and workout progress while managing health activities consistently across devices.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A responsive fitness website featuring personalised fitness plans, calorie tracking, step counts, heart-rate insights and flexible workout schedules accessible from any screen size.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Aims to help users stay consistent with fitness goals through accessible information, clear navigation and motivational tools across desktop and mobile.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/226906173/FitTrack-Responsive-Website-UIUX-Casestudy" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 06 FitTrack Dashboard -->
+            <article class="project-card" tabindex="0">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/projects/fittrack-dashboard-cover.png" alt="FitTrack Fitness Tracking Dashboard project cover" class="project-thumb-img" loading="lazy" />
+              </div>
+              <div class="project-card-body">
+                <div class="project-top-row">
+                  <span class="project-num">06</span>
+                  <span class="project-cat-pill">Fitness Dashboard</span>
+                </div>
+                <h3 class="project-title">FitTrack <span class="project-title-sub">Dashboard</span></h3>
+                <div class="psi-stack">
+                  <div class="psi-item psi-problem">
+                    <span class="psi-label">PROBLEM STATEMENT</span>
+                    <p class="psi-text">Managing workouts, health data, meal planning and fitness progress across different tools makes it difficult to maintain a clear picture of personal fitness.</p>
+                  </div>
+                  <div class="psi-item psi-solution">
+                    <span class="psi-label">SOLUTION</span>
+                    <p class="psi-text">A centralised fitness dashboard bringing workout tracking, health monitoring (calories, heart rate, steps), meal planning and progress updates into one unified interface.</p>
+                  </div>
+                  <div class="psi-item psi-impact">
+                    <span class="psi-label">IMPACT</span>
+                    <p class="psi-text">Helps users stay organised and understand their fitness progress without switching between multiple applications or losing track of their data.</p>
+                  </div>
+                </div>
+                <a href="https://www.behance.net/gallery/226137691/FitTrack-Fitness-Tracking-Dashboard-UIUX-Casestudy" target="_blank" rel="noopener noreferrer" class="project-behance-link">
+                  View full project on Behance
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+          </div><!-- /projects-grid row 2 -->
+        </section>
+      </div>
+
+      <!-- PAGE: WORK -->
+      <div class="page" id="page-work" hidden>
+        <section class="page-section" aria-label="Professional Experience">
+          <div class="page-header">
+            <div class="meta-label">
+              <span class="sage-dot-sm" aria-hidden="true"></span>
+              <span>03 / WORK</span>
+            </div>
+            <h2 class="page-title">Professional Experience</h2>
+            <p class="page-subtitle">My career in product design, UX, and cross-functional collaboration.</p>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-company">Hire My Idea</span>
+                <span class="experience-date">December 2025 &ndash; Present</span>
+              </div>
+              <h4 class="experience-role">UI/UX Designer</h4>
+              <ul class="experience-points">
+                <li>Led end-to-end design across 6 early-stage products, including 3 mobile applications and 3 websites with SaaS dashboards.</li>
+                <li>Delivered 6 interactive prototypes from discovery to design handoff.</li>
+                <li>Conducted competitor analysis across all 6 products, developed information architecture, and mapped 6 end-to-end user flows.</li>
+                <li>Designed 2,000+ screens and UI states; used Claude, ChatGPT, Google Stitch, Lovable, and Bolt for research synthesis, ideation, and prototyping.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-company">Legacy Note</span>
+                <span class="experience-date">January 2026 &ndash; February 2026</span>
+              </div>
+              <h4 class="experience-role">UX Design Intern</h4>
+              <ul class="experience-points">
+                <li>Designed a digital estate planning platform from scratch in 8 weeks.</li>
+                <li>Developed 3 research-backed personas, mapped 2 core user journeys, and delivered prototypes across 4 key screen types.</li>
+                <li>Applied WCAG accessibility standards; identified a critical invitation-flow security issue before development, helping prevent 2&ndash;3 sprints of rework.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-company">Phantasm Solutions Pvt Ltd</span>
+                <span class="experience-date">July 2025 &ndash; October 2025</span>
+              </div>
+              <h4 class="experience-role">UI/UX Design Intern</h4>
+              <ul class="experience-points">
+                <li>Designed 5+ feature prototypes and informed the deployment of 2 features.</li>
+                <li>Identified 15+ usability issues and reduced development rework by approximately 15%.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-company">Arvind Limited</span>
+                <span class="experience-date">August 2023 &ndash; January 2024</span>
+              </div>
+              <h4 class="experience-role">Executive Merchandiser / Product Developer &ndash; Levi's</h4>
+              <ul class="experience-points">
+                <li>Achieved 98% on-time delivery and reduced production delays by approximately 15% through proactive vendor and sampling coordination.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="credentials-grid">
+            <div class="credential-card">
+              <span class="credential-label">EDUCATION</span>
+              <p class="credential-title">B.Tech &ndash; Textile Technology</p>
+              <p class="credential-meta">Visvesvaraya Technological University &middot; 2019 &ndash; 2023</p>
+            </div>
+            <div class="credential-card">
+              <span class="credential-label">CERTIFICATION</span>
+              <p class="credential-title">Advanced UI/UX Design</p>
+              <p class="credential-meta">Aspira Designs &middot; December 2024 &ndash; April 2025</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- PAGE: CONTACT -->
+      <div class="page" id="page-contact" hidden>
+        <section class="page-section contact-page-section" aria-label="Contact">
+          <div class="contact-card">
+            <div class="page-header" style="margin-bottom:0;">
+              <div class="meta-label">
+                <span class="sage-dot-sm" aria-hidden="true"></span>
+                <span>04 / CONTACT</span>
+              </div>
+              <h2 class="page-title">Let's build something thoughtful together.</h2>
+              <p class="page-subtitle" style="max-width:520px;">Open to product design opportunities, UI/UX collaborations and creative conversations. Feel free to reach out directly.</p>
+            </div>
+
+            <div class="contact-primary-row">
+              <a href="mailto:rishikarchoudhary@gmail.com" class="contact-email-link">
+                <span>rishikarchoudhary@gmail.com</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+
+            <div class="contact-platforms-grid">
+              <a href="https://www.linkedin.com/in/rishika-choudhary-072a51272/" target="_blank" rel="noopener noreferrer" class="contact-platform-item">
+                <span class="platform-name">LinkedIn</span><span class="platform-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://dribbble.com/R_Choudhary" target="_blank" rel="noopener noreferrer" class="contact-platform-item">
+                <span class="platform-name">Dribbble</span><span class="platform-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://www.behance.net/rishikachoudha3" target="_blank" rel="noopener noreferrer" class="contact-platform-item">
+                <span class="platform-name">Behance</span><span class="platform-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://x.com/RishikaCho81977" target="_blank" rel="noopener noreferrer" class="contact-platform-item">
+                <span class="platform-name">X / Twitter</span><span class="platform-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <button type="button" class="contact-platform-item discord-copy-btn" data-discord="rishikarc" aria-label="Copy Discord username rishikarc">
+                <span class="platform-name">Discord &middot; rishikarc</span><span class="platform-arrow">Copy</span>
+              </button>
+              <a href="mailto:rishikarchoudhary@gmail.com" class="contact-platform-item">
+                <span class="platform-name">Email</span><span class="platform-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
