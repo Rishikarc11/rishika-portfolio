@@ -121,10 +121,27 @@
       </div>
     </section>
 
+    <!-- ================= FLOW VIDEO ================= -->
+    <section class="cs-section" id="flow">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">03</span>The flow, start to finish</h2>
+        <p>Eighty seconds through the prototype: one line of intent, three quick questions, a visa check, destinations, stays and routes, and a finished trip ready to book. The rest of this page explains the decisions behind it.</p>
+      </div>
+      <figure class="cs-figure">
+        <div class="cs-video-wrap">
+          <video class="cs-video" src="work/aladdin/genie-flow.mp4" poster="work/aladdin/genie-poster.jpg" muted loop playsinline preload="none" aria-label="Screen recording of the Genie prototype: planning a 15-day Japan trip from the first chat message to the finished bookable itinerary"></video>
+          <button type="button" class="cs-video-play" aria-label="Play the prototype walkthrough">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+        <figcaption>Prototype walkthrough on iOS. <a class="cs-proto-link" href="#" target="_blank" rel="noopener noreferrer"><mark class="todo">paste your Figma prototype share link here</mark> Open the interactive prototype &nearr;</a></figcaption>
+      </figure>
+    </section>
+
     <!-- ================= DECISION 1 ================= -->
     <section class="cs-section" id="decision-1">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">03</span>Decision one: visa before itinerary</h2>
+        <h2 class="cs-h2"><span class="cs-num">04</span>Decision one: visa before itinerary</h2>
         <p>The obvious flow is to generate the trip and mention the visa somewhere at the end. It demos beautifully and sets people up to be disappointed. I flipped it. When a destination needs a visa the user doesn't hold, Genie says so before it builds anything, in one sentence, with two chips: "Yes, it's valid" or "No, I don't have one".</p>
         <p>If the answer is no, Genie doesn't stop. It still plans the full trip, and it drops a visa card into the conversation: processing time, maximum stay, passport validity rule, approximate fee, and a Start Application button that opens the official application centre. Most importantly, it does the date maths: "On track for Jan 5. Apply by Dec 12." Then it offers to slot that deadline into the trip timeline.</p>
         <p>Uploading a passport and visas works in the other direction too. Genie unlocks visa-free and visa-on-arrival destinations for that passport, so "where can I go next month?" gets an answer that's actually true for you.</p>
@@ -142,7 +159,7 @@
     <!-- ================= DECISION 2 ================= -->
     <section class="cs-section" id="decision-2">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">04</span>Decision two: chat asks, cards do the heavy lifting</h2>
+        <h2 class="cs-h2"><span class="cs-num">05</span>Decision two: chat asks, cards do the heavy lifting</h2>
         <p>A chat interface is great for intent and terrible for comparison. Nobody wants to pick six cities out of a paragraph. So Genie's conversation stays short and asks only what it needs: where you're starting from, who's coming, what your vibe is, with chips so the answer is one tap. Then it hands off to a card. "Top destinations for your trip. Open."</p>
         <p>Opening the card drops the user into a purpose-built screen: a stack of destination cards with photos, dates and price range, a Relaxed, Balanced or Fast pace toggle that changes the recommended route and stop count, and a Generate Trip button that returns them to the conversation with the choice made. The chat remembers the choice as a message, so the thread stays a readable record of the plan.</p>
         <p>The same pattern repeats for stays, routes, experiences and booking. Chat for intent, cards for decisions, and a Chat / Trip toggle at the bottom so the user can flip between the conversation and the structured plan without losing either.</p>
@@ -157,7 +174,7 @@
     <!-- ================= DECISION 3 ================= -->
     <section class="cs-section" id="decision-3">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">05</span>Decision three: nothing Genie generates is locked</h2>
+        <h2 class="cs-h2"><span class="cs-num">06</span>Decision three: nothing Genie generates is locked</h2>
         <p>Trust in an AI planner comes from being able to overrule it cheaply. If changing one hotel means regenerating the whole trip, people stop trusting the trip. So every layer of the plan is editable in place.</p>
         <ul class="cs-list">
           <li><strong>Destinations:</strong> select or deselect any stop, or switch the pace and let Genie re-route.</li>
@@ -180,7 +197,7 @@
     <!-- ================= THE FINISHED TRIP ================= -->
     <section class="cs-section" id="trip">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">06</span>The finished trip is one bookable object</h2>
+        <h2 class="cs-h2"><span class="cs-num">07</span>The finished trip is one bookable object</h2>
         <p>Once the user says yes, Genie doesn't hand back a wall of text. It builds the trip as a single structured plan, city by city. Each city block has the arrival (flight or train, with duration and price), the transfer to the hotel, the stay (with rating and nightly rate), the day-by-day itinerary with experiences, and the local transfers between them. Every item keeps its swap and remove controls from the previous section.</p>
         <p>At the bottom sits one button: Book this Trip. Flights, stays and transfers are booked together, and the confirmation, ticket and booking detail follow in the same conversation. Download and share live in the header so the plan can leave the app and reach the people travelling with you. On web the same trip renders as the middle pane, with the chat that produced it still on the left and the route map on the right.</p>
         <p class="cs-alt"><strong>Why one object:</strong> if the plan is a list of separate bookings, every change means re-checking five things. If it is one trip, a change to the dates ripples through flights, stays and transfers together, and the user only has to confirm once.</p>
@@ -201,7 +218,7 @@
     <!-- ================= CRAFT ================= -->
     <section class="cs-section" id="craft">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">07</span>Craft and system</h2>
+        <h2 class="cs-h2"><span class="cs-num">08</span>Craft and system</h2>
         <ul class="cs-list">
           <li><strong>Genie has a voice.</strong> Warm, a little playful ("Japan for 15 days? Now we're talking"), and direct when it matters ("Before I build it, Japan needs a tourist visa"). The tone was written as part of the design, not left for copy later.</li>
           <li><strong>One system, two platforms.</strong> The iOS flow and the web flow share components, colour and type. On web the chat stays on the left and the cards expand into panes instead of sheets, so nothing has to be relearned.</li>
@@ -218,7 +235,7 @@
     <!-- ================= OUTCOME ================= -->
     <section class="cs-section" id="outcome">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">08</span>Outcome</h2>
+        <h2 class="cs-h2"><span class="cs-num">09</span>Outcome</h2>
         <p>Version 1 of Genie reached dev-ready on both iOS and web, with a clickable prototype of the chat-to-booking flow and annotated handoff pages. <mark class="todo">add what was built, if anything, and any founder or developer feedback as a quote</mark></p>
         <p>The company wound down before launch, so there are no usage numbers. If it had shipped, these are the ones I'd have watched first:</p>
         <ul class="cs-list">
@@ -250,5 +267,19 @@
     </footer>
 
   </main>
+  <script>
+    (function(){
+      var wrap=document.querySelector('.cs-video-wrap'); if(!wrap) return;
+      var v=wrap.querySelector('video'), btn=wrap.querySelector('.cs-video-play');
+      var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function play(){ v.play().then(function(){ wrap.classList.add('is-playing'); }).catch(function(){}); }
+      function pause(){ v.pause(); wrap.classList.remove('is-playing'); }
+      btn.addEventListener('click', function(){ v.paused ? play() : pause(); });
+      v.addEventListener('click', function(){ v.paused ? play() : pause(); });
+      if(!reduce && 'IntersectionObserver' in window){
+        new IntersectionObserver(function(es){ es.forEach(function(e){ e.isIntersecting ? play() : pause(); }); }, {threshold:0.35}).observe(wrap);
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -719,3 +719,19 @@ mark.todo{background:#FFE98A;color:#3A3000;padding:1px 5px;border-radius:4px;fon
   .cs-device--tall,.cs-scroll--tall{height:min(640px,72vh);}
   .cs-trip .cs-device{max-width:360px;margin:0 auto;}
 }
+
+/* Case study: prototype walkthrough video (recording includes the device bezel) */
+.cs-video-wrap{position:relative;max-width:380px;margin:0 auto;border-radius:48px;overflow:hidden;background:var(--warm-ivory);}
+.cs-video{display:block;width:100%;height:auto;border-radius:48px;}
+.cs-video-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(37,35,38,0.78);color:var(--warm-ivory);backdrop-filter:blur(6px);
+  transition:opacity var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.cs-video-play svg{margin-left:3px;}
+.cs-video-play:hover{transform:translate(-50%,-50%) scale(1.06);}
+.cs-video-wrap.is-playing .cs-video-play{opacity:0;pointer-events:none;}
+.cs-proto-link{color:var(--plum-charcoal);font-weight:600;margin-left:6px;}
+.cs-proto-link:hover{color:var(--burnt-orange);}
+@media(max-width:560px){.cs-video-wrap,.cs-video{border-radius:32px;}}
