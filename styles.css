@@ -710,3 +710,12 @@ mark.todo{background:#FFE98A;color:#3A3000;padding:1px 5px;border-radius:4px;fon
   .cs-phones .cs-device:nth-child(3){display:none;}
   .cs-phones img:nth-child(3){display:block;}
 }
+
+/* Case study: finished-trip layout (phone + web side by side) */
+.cs-trip{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:20px;align-items:start;}
+.cs-device--tall,.cs-scroll--tall{height:min(820px,84vh);max-height:none;}
+@media(max-width:960px){
+  .cs-trip{grid-template-columns:1fr;}
+  .cs-device--tall,.cs-scroll--tall{height:min(640px,72vh);}
+  .cs-trip .cs-device{max-width:360px;margin:0 auto;}
+}
