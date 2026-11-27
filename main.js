@@ -10,7 +10,7 @@
   const ROUTES = {
     'home':     { pageId: 'page-home',     title: 'Rishika Choudhary — UI/UX & Product Designer' },
     'projects': { pageId: 'page-projects', title: 'Projects — Rishika Choudhary' },
-    'work':     { pageId: 'page-work',     title: 'Work — Rishika Choudhary' },
+    'work':     { pageId: 'page-work',     title: 'Experience — Rishika Choudhary' },
     'contact':  { pageId: 'page-contact',  title: 'Contact — Rishika Choudhary' },
   };
   const DEFAULT_ROUTE = 'home';
