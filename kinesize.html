@@ -10,7 +10,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://rishikarc11.github.io/rishika-portfolio/kinesize.html" />
   <meta property="og:title" content="Kinesize — Case Study — Rishika Choudhary" />
-  <meta property="og:description" content="Designing a merchant dashboard that turns sizing data into decisions. B2B SaaS for sportswear stores, designed to developer handoff." />
+  <meta property="og:description" content="A merchant dashboard that turns sizing data into decisions. B2B SaaS for sportswear stores, designed to developer handoff." />
   <meta property="og:image" content="https://rishikarc11.github.io/rishika-portfolio/work/kinesize/cover.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -21,7 +21,6 @@
 </head>
 <body class="cs-body">
 
-  <!-- Slim top bar -->
   <header class="cs-topbar">
     <a href="index.html#projects" class="cs-back">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
@@ -33,11 +32,6 @@
     </a>
     <a href="index.html#contact" class="cs-topbar-contact">Contact</a>
   </header>
-
-  <!-- DRAFT NOTE: delete this block before publishing -->
-  <div class="cs-draft-note" role="note">
-    <strong>Draft.</strong> Yellow highlights are details only you can confirm. Replace or remove each one, then delete this note.
-  </div>
 
   <main class="cs-main">
 
@@ -52,38 +46,37 @@
         <p class="cs-lede">A merchant dashboard that turns sizing data into decisions. Movement-based size recommendations for sportswear stores, designed end to end to developer handoff.</p>
 
         <dl class="cs-facts">
-          <div><dt>Role</dt><dd>Product designer, end to end: research, flows, UI, design system, handoff</dd></div>
-          <div><dt>Client</dt><dd>Hire My Idea <mark class="todo">confirm how you want the company described</mark></dd></div>
-          <div><dt>Timeline</dt><dd>About five weeks, late August to end of September 2026</dd></div>
-          <div><dt>Team</dt><dd><mark class="todo">e.g. founder, 1 developer, me</mark></dd></div>
-          <div><dt>Surfaces</dt><dd>Merchant web dashboard, Shopify fit widget, marketing site</dd></div>
-          <div><dt>Status</dt><dd>Marketing site approved by the client with no revisions. Dashboard and widget designed to dev-ready. Dropped before build when the company wound down.</dd></div>
+          <div><dt>Role</dt><dd>Product designer, end to end</dd></div>
+          <div><dt>Client</dt><dd>Hire My Idea</dd></div>
+          <div><dt>Timeline</dt><dd>Five weeks, Aug–Sep 2026</dd></div>
+          <div><dt>Team</dt><dd>Founder and me</dd></div>
+          <div><dt>Surfaces</dt><dd>Web dashboard, Shopify fit widget, marketing site</dd></div>
+          <div><dt>Status</dt><dd>Site approved with no revisions. Dashboard dev-ready. Dropped before build.</dd></div>
         </dl>
       </div>
 
       <figure class="cs-figure cs-figure--hero">
         <img src="work/kinesize/dashboard-live.png" alt="Kinesize merchant dashboard: KPI cards, a 'what needs your attention' panel, recommendation activity chart, size distribution and product performance table" loading="eager" />
-        <figcaption>The live dashboard a merchant sees once their store is connected.</figcaption>
+        <figcaption>The live dashboard once a store is connected.</figcaption>
       </figure>
     </section>
 
-    <!-- ================= CONTEXT ================= -->
+    <!-- ================= PROBLEM ================= -->
     <section class="cs-section" id="problem">
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">01</span>The problem</h2>
-        <p>Sportswear is returned for size more than almost any other category. A size chart tells a shopper their chest measurement maps to a Medium, but it says nothing about how a compression legging behaves differently from a relaxed training short, or how a knit stretches across a body in motion. Shoppers guess, order two sizes, and send one back. Merchants absorb the cost.</p>
-        <p>Kinesize is a Shopify app that recommends a size from how a garment is meant to move. The shopper does a short movement capture on their phone. Pose is processed on the device, never uploaded, which is what makes the product GDPR-native rather than GDPR-patched. Those movement features are matched against how each garment's fabric behaves, by fabric family and fit intent, to land on a size.</p>
-        <p>Merchants pay 50p plus 1.5% of the item price, only on orders the customer keeps. No install fee, no subscription. The pricing ties the product to the one number the merchant cares about: fewer size-related returns.</p>
-        <p>I was brought in to design the whole product surface: the merchant dashboard where stores set up and monitor Kinesize, the fit widget that sits on their product pages, and the marketing site that sells it to them.</p>
+        <p>Sportswear is returned for size more than almost any other category. A size chart maps a chest measurement to a Medium but says nothing about how a compression legging behaves differently from a relaxed short. Shoppers order two sizes and send one back. Merchants absorb the cost.</p>
+        <p>Kinesize recommends a size from how a garment moves. The shopper does a short movement capture on their phone, processed on the device and never uploaded. Those movement features are matched against each garment's fabric family and fit intent. Merchants pay 50p plus 1.5% of the item price, only on orders the customer keeps.</p>
+        <p>I designed the whole surface: the merchant dashboard, the fit widget on product pages, and the marketing site that sells it.</p>
 
         <aside class="cs-callout">
           <h3>Why this brief fit me</h3>
-          <p>Before design, I studied Textile Technology and worked as a product developer on Levi's at Arvind Limited. I've sat in fit sessions, argued about fabric stretch percentages, and seen what a wrong grading decision does to returns. Kinesize's core idea, that fabric family and fit intent matter as much as body measurements, was a problem I already understood from the manufacturing side.</p>
+          <p>I studied Textile Technology and worked as a product developer on Levi's at Arvind. I've sat in fit sessions and seen what a wrong grading decision does to returns. Fabric behaviour mattering as much as body measurement was a problem I already understood from the manufacturing side.</p>
         </aside>
       </div>
       <figure class="cs-figure">
-        <img src="work/kinesize/product-map.png" alt="Kinesize product map and site structure: branches for Problem (fit returns dominate apparel, static charts miss movement), How it works (on-device pose capture, movement features, fabric behaviour per item), Pricing (50p plus 1.5% of price, only on kept orders, no install or subscription), Moat (outcome-labelled dataset, fabric library by family, GDPR-native by design) and Market (UK Shopify activewear, Europe and US next, default sizing layer), beside a website sitemap of Home, How it works, Pricing, Privacy, Result, Docs and Company" loading="lazy" />
-        <figcaption>Discovery output: the product map I built from the brief, and the sitemap it produced for the marketing site. Privacy got its own page because on-device capture is the pitch, not a footnote.</figcaption>
+        <img src="work/kinesize/product-map.png" alt="Kinesize product map with branches for problem, how it works, pricing, moat and market, beside a website sitemap of Home, How it works, Pricing, Privacy, Result, Docs and Company" loading="lazy" />
+        <figcaption>Discovery: the product map built from the brief, and the sitemap it produced. Privacy got its own page because on-device capture is the pitch.</figcaption>
       </figure>
     </section>
 
@@ -91,32 +84,29 @@
     <section class="cs-section" id="designed">
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">02</span>What I designed</h2>
-        <p>Three surfaces, one system. The dashboard carried most of the complexity, so that's where the rest of this case study focuses.</p>
         <div class="cs-grid-3">
           <div class="cs-card">
             <h3>Merchant dashboard</h3>
             <ul>
-              <li>Authentication: login, create account, forgot password, expired link, team invite</li>
-              <li>Four-step setup: connect store, set up products, add the fit widget, go live</li>
+              <li>Login, sign-up, password reset, team invite</li>
+              <li>Four-step setup checklist</li>
               <li>Dashboard in pre-live and live states</li>
-              <li>Products, insights, store integration, billing, settings, help</li>
-              <li>Empty, error and success states for every module</li>
+              <li>Products, insights, integration, billing, settings</li>
+              <li>Empty, error and success states throughout</li>
             </ul>
           </div>
           <div class="cs-card">
             <h3>Fit widget</h3>
             <ul>
-              <li>The block merchants place on their product page template</li>
-              <li>Shopper-facing sizing flow and recommendation result</li>
-              <li>Designed to sit inside any Shopify theme without fighting it</li>
+              <li>Shopper-facing capture and recommendation</li>
+              <li>Sits inside any Shopify theme</li>
             </ul>
           </div>
           <div class="cs-card">
             <h3>Marketing site</h3>
             <ul>
-              <li>Seven pages: Home, How it works, Pricing, Privacy, Result, Docs, Company</li>
-              <li>Pricing calculator for the per-kept-order model</li>
-              <li>Four colour directions explored before committing</li>
+              <li>Home, How it works, Pricing, Privacy, Result, Docs, Company</li>
+              <li>Four colour directions explored</li>
               <li>Approved by the client with no revisions</li>
             </ul>
           </div>
@@ -127,40 +117,32 @@
     <!-- ================= DECISION 1 ================= -->
     <section class="cs-section" id="decision-1">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">03</span>Decision one: setup is a checklist, not a wizard</h2>
-        <p>Getting Kinesize live means four jobs that don't happen in one sitting or always by one person. Connecting the store is a Shopify install. Setting up products means giving each garment a fabric family and fit intent, which a merchandiser might own. Adding the fit widget means editing the theme, which often lands on a developer. Going live is a switch the owner wants to flip themselves.</p>
-        <p>A linear wizard would have forced all of that into one session and blocked everything behind the step that needed someone else. So setup became a persistent checklist on the dashboard home: a progress bar, four steps with a one-line explanation of what each one actually involves, and each step opening its own short flow and returning to the list. The merchant can leave at step two and come back a day later without losing their place.</p>
-        <p>The dashboard also has a distinct state for "set up but not yet live", so a merchant who has done the work but hasn't flipped the switch isn't shown an empty analytics page that looks broken.</p>
-        <p class="cs-alt"><strong>Rejected:</strong> a full-screen stepper. It demos well and looks tidy, but it assumes one person with every permission finishing in one go.</p>
+        <h2 class="cs-h2"><span class="cs-num">03</span>Setup is a checklist, not a wizard</h2>
+        <p>Going live takes four jobs that rarely happen in one sitting or by one person: install the Shopify app, tag each product with fabric family and fit intent, add the widget to the theme, flip the switch. The theme edit often needs a developer.</p>
+        <p>A wizard would block everything behind whichever step needs someone else. So setup is a persistent checklist on the dashboard home, with a progress bar and one line per step on what it involves. Leave at step two, come back tomorrow, nothing is lost. A separate "set up but not live" state stops a finished store from seeing an empty analytics page.</p>
+        <p class="cs-alt"><strong>Rejected:</strong> a full-screen stepper. Demos well, assumes one person with every permission.</p>
       </div>
       <figure class="cs-figure">
-        <img src="work/kinesize/setup-checklist.png" alt="Kinesize dashboard setup screen: 'Get Kinesize ready for your store', progress bar showing 0 of 4 steps, and a checklist of connect your store, set up your products, add the fit widget, go live" loading="lazy" />
-        <figcaption>Setup checklist on the dashboard home. Each step explains what it involves and opens its own flow.</figcaption>
+        <img src="work/kinesize/setup-checklist.png" alt="Kinesize dashboard setup screen: progress bar showing 0 of 4 steps, and a checklist of connect your store, set up your products, add the fit widget, go live" loading="lazy" />
+        <figcaption>Setup checklist on the dashboard home.</figcaption>
       </figure>
     </section>
 
     <!-- ================= DECISION 2 ================= -->
     <section class="cs-section" id="decision-2">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">04</span>Decision two: the dashboard answers "what do I do", not "how is it going"</h2>
-        <p>The first dashboard layout I explored was chart-first: a big activity graph, then tables. It looked like analytics and told the merchant nothing they could act on. A store owner opening Kinesize on a Tuesday morning has one question: is anything wrong, and which product?</p>
-        <p>The final layout leads with four numbers that matter (recommendations made, completion rate, size-related returns, most recommended size), each with its change against the previous period. Directly below sits a dark "What needs your attention" panel: a short list of signals per product. High returns on one size. A size growing in recommendations. A product performing consistently. Each one links straight to that product.</p>
-        <p>Only after that do the charts appear: recommendation activity over time, the distribution of recommended sizes, and a product table with a plain-language status of Good or Watch. The merchant can go deep, but they don't have to in order to get value.</p>
-        <p class="cs-alt"><strong>The detail I'd defend hardest:</strong> the signal panel is dark on a light page. It is the one place where the dashboard is telling the merchant something rather than showing them data, and it should feel different.</p>
+        <h2 class="cs-h2"><span class="cs-num">04</span>The dashboard answers "what do I do", not "how is it going"</h2>
+        <p>My first layout was chart-first. It looked like analytics and told the merchant nothing they could act on. A store owner opening Kinesize has one question: is anything wrong, and which product?</p>
+        <p>The final layout leads with four numbers, then a dark "What needs your attention" panel: high returns on one size, a size growing in recommendations, a product performing well, each linking to that product. Charts and the product table come after. The panel is dark on a light page because it is the one place the dashboard is telling the merchant something rather than showing data.</p>
       </div>
-      <figure class="cs-figure">
-        <img src="work/kinesize/dashboard-live.png" alt="Close-up of the Kinesize live dashboard with the dark 'what needs your attention' panel listing high returns, growing size and performing well signals" loading="lazy" />
-        <figcaption>KPIs, then signals, then charts. The order is the design.</figcaption>
-      </figure>
     </section>
 
     <!-- ================= DECISION 3 ================= -->
     <section class="cs-section" id="decision-3">
       <div class="cs-wrap">
-        <h2 class="cs-h2"><span class="cs-num">05</span>Decision three: products are the unit of work, and fabric is a first-class field</h2>
-        <p>Most sizing tools treat a product as a size chart. Kinesize treats it as a garment with a fabric family (how it stretches and recovers) and a fit intent (compression, fitted, regular, relaxed). Those two fields are what make the recommendation meaningfully different from a measurement lookup, so the product setup flow had to make them quick to assign and hard to get wrong.</p>
-        <p>I designed product setup around the merchant's own catalogue: a list they recognise, with fabric family and fit intent added inline, bulk-editable where products share construction. Every insight downstream, from the attention panel to the product table, keys off the product, so a merchant always lands somewhere they can take action.</p>
-        <p>This is where the textile background earned its place. I pushed for fabric family to be a required field rather than an optional refinement, because a compression knit and a woven short in the same size label behave nothing alike on a body. <mark class="todo">confirm this is accurate to how the conversation went, or adjust</mark></p>
+        <h2 class="cs-h2"><span class="cs-num">05</span>Products are the unit, and fabric is required</h2>
+        <p>Most sizing tools treat a product as a size chart. Kinesize treats it as a garment with a fabric family and a fit intent, because a compression knit and a woven short in the same size label behave nothing alike on a body. I pushed for fabric family to be a required field, not an optional refinement.</p>
+        <p>Product setup works from the merchant's own catalogue, with both fields added inline and bulk-editable where products share construction. Every insight downstream keys off the product, so the merchant always lands somewhere they can act.</p>
       </div>
     </section>
 
@@ -168,16 +150,15 @@
     <section class="cs-section" id="craft">
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">06</span>Craft and system</h2>
-        <p>Three things that don't show up in a hero screenshot but mattered for handoff.</p>
         <ul class="cs-list">
-          <li><strong>States before polish.</strong> Every module got its empty, error and success state designed before high-fidelity visuals, so the developer never had to invent one.</li>
-          <li><strong>One design system across three surfaces.</strong> The dashboard, widget and marketing site share type, colour, spacing and components, so the widget looks like it belongs to the product the merchant set up.</li>
-          <li><strong>Colour was a decision, not a default.</strong> I explored four colour directions for the marketing site side by side. The client chose the first, without notes. In the dashboard a single warm action colour sits against neutrals, so the signals in the attention panel are the loudest thing on the page.</li>
+          <li><strong>States before polish.</strong> Empty, error and success states designed for every module before high fidelity, so the developer never had to invent one.</li>
+          <li><strong>One system, three surfaces.</strong> Dashboard, widget and site share type, colour, spacing and components.</li>
+          <li><strong>Colour was a decision.</strong> Four directions for the site, side by side. The client chose the first, without notes. The dashboard keeps one warm action colour against neutrals so the attention panel is the loudest thing on the page.</li>
         </ul>
       </div>
       <figure class="cs-figure cs-figure--wide">
-        <img src="work/kinesize/website-colour-options.png" alt="Four colour direction options for the Kinesize marketing site shown side by side, each with its landing page and brands page and a colour swatch pair" loading="lazy" />
-        <figcaption>Four colour directions for the marketing site, explored side by side. Option 1 was chosen.</figcaption>
+        <img src="work/kinesize/website-colour-options.png" alt="Four colour direction options for the Kinesize marketing site shown side by side, each with its landing page and a colour swatch pair" loading="lazy" />
+        <figcaption>Four colour directions for the marketing site. Option 1 was chosen.</figcaption>
       </figure>
     </section>
 
@@ -185,35 +166,34 @@
     <section class="cs-section" id="outcome">
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">07</span>Outcome</h2>
-        <p>The marketing site was reviewed and approved by the client without a single revision request. The dashboard and fit widget reached dev-ready, with annotated handoff pages and a prototype of the setup-to-live flow. The project was then dropped as the company wound down, before anything was built.</p>
-        <p>So there are no live metrics. If it had shipped, these are the numbers I'd have watched first:</p>
+        <p>The marketing site was approved by the client with no revision requests. The dashboard and widget reached dev-ready with annotated handoff and a setup-to-live prototype. The project was dropped before build when the company wound down.</p>
+        <h3 class="cs-h3">What I'd have measured</h3>
         <ul class="cs-list">
-          <li><strong>Setup completion rate and time to go live.</strong> The checklist exists to get this number up. The landing page promises most stores go live the same afternoon.</li>
-          <li><strong>Recommendation completion rate.</strong> How many shoppers who open the widget finish it. If this is low, the widget is asking too much.</li>
-          <li><strong>Size-related return rate per product.</strong> The only metric that pays for the product, and the one the attention panel is built around.</li>
+          <li><strong>Setup completion and time to go live.</strong> The checklist exists to move this number.</li>
+          <li><strong>Recommendation completion rate.</strong> If shoppers abandon the widget, it is asking too much.</li>
+          <li><strong>Size-related return rate per product.</strong> The only metric that pays for the product.</li>
         </ul>
         <h3 class="cs-h3">What I'd do next</h3>
         <ul class="cs-list">
-          <li>Usability-test the four-step setup with five merchants who run their own Shopify store, especially the theme edit step.</li>
-          <li>Validate the attention panel thresholds against real return data. Right now "high returns" is a design assumption, not a calibrated number.</li>
-          <li>Design the merchandiser view: a bulk fabric-and-fit editor for stores with hundreds of SKUs.</li>
+          <li>Usability-test the setup with five merchants, especially the theme edit step.</li>
+          <li>Calibrate the attention thresholds against real return data.</li>
+          <li>Design a bulk fabric-and-fit editor for stores with hundreds of SKUs.</li>
         </ul>
       </div>
     </section>
 
-    <!-- ================= FOOTER NAV ================= -->
     <footer class="cs-footer">
       <div class="cs-wrap cs-footer-inner">
         <a href="index.html#projects" class="cs-footer-link">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
           All projects
         </a>
-        <a href="index.html#contact" class="cs-footer-link cs-footer-link--primary">
-          Get in touch
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        <a href="aladdin.html" class="cs-footer-link cs-footer-link--primary">
+          Next: Aladdin Genie
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
-      <p class="cs-copyright">2026 © Rishika Choudhary. Product names and placeholder data shown belong to their respective owners; store names and brand logos in mockups are illustrative.</p>
+      <p class="cs-copyright">2026 © Rishika Choudhary. Store names and brand logos in mockups are illustrative placeholders.</p>
     </footer>
 
   </main>
