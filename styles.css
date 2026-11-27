@@ -737,3 +737,6 @@ mark.todo{background:#FFE98A;color:#3A3000;padding:1px 5px;border-radius:4px;fon
 @media(max-width:560px){.cs-video-wrap,.cs-video{border-radius:32px;}}
 .cs-trip--3{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2.1fr);}
 @media(max-width:960px){.cs-trip--3{grid-template-columns:1fr 1fr;}.cs-trip--3 .cs-scroll{grid-column:1 / -1;}.cs-trip--3 .cs-device{max-width:none;}}
+.cs-figure--small{max-width:460px;}
+.cs-figure--small img{width:343px;max-width:100%;margin:0 auto;}
+.cs-figure--small img{box-shadow:0 18px 44px -30px rgba(37,35,38,0.4);}
