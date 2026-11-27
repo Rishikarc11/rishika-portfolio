@@ -735,3 +735,5 @@ mark.todo{background:#FFE98A;color:#3A3000;padding:1px 5px;border-radius:4px;fon
 .cs-proto-link{color:var(--plum-charcoal);font-weight:600;margin-left:6px;}
 .cs-proto-link:hover{color:var(--burnt-orange);}
 @media(max-width:560px){.cs-video-wrap,.cs-video{border-radius:32px;}}
+.cs-trip--3{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2.1fr);}
+@media(max-width:960px){.cs-trip--3{grid-template-columns:1fr 1fr;}.cs-trip--3 .cs-scroll{grid-column:1 / -1;}.cs-trip--3 .cs-device{max-width:none;}}
