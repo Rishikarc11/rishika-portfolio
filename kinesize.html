@@ -57,7 +57,7 @@
           <div><dt>Timeline</dt><dd><mark class="todo">e.g. 6 weeks, Feb–Mar 2026. Take from Figma version history</mark></dd></div>
           <div><dt>Team</dt><dd><mark class="todo">e.g. founder, 1 developer, me</mark></dd></div>
           <div><dt>Surfaces</dt><dd>Merchant web dashboard, Shopify fit widget, marketing site</dd></div>
-          <div><dt>Status</dt><dd>Designed to handoff, dev-ready. The company wound down before launch.</dd></div>
+          <div><dt>Status</dt><dd>Marketing site approved by the client with no revisions. Dashboard and widget designed to dev-ready. Dropped before build when the company wound down.</dd></div>
         </dl>
       </div>
 
@@ -72,7 +72,8 @@
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">01</span>The problem</h2>
         <p>Sportswear is returned for size more than almost any other category. A size chart tells a shopper their chest measurement maps to a Medium, but it says nothing about how a compression legging behaves differently from a relaxed training short, or how a knit stretches across a body in motion. Shoppers guess, order two sizes, and send one back. Merchants absorb the cost.</p>
-        <p>Kinesize is a Shopify app that recommends a size from how a garment is meant to move: its fabric family and fit intent, combined with what the shopper tells it. Merchants pay per kept order <mark class="todo">confirm: landing page says 50p + 1.5% per order, only if the customer keeps it</mark>, which aligns the product with the one number the merchant cares about: fewer size-related returns.</p>
+        <p>Kinesize is a Shopify app that recommends a size from how a garment is meant to move. The shopper does a short movement capture on their phone. Pose is processed on the device, never uploaded, which is what makes the product GDPR-native rather than GDPR-patched. Those movement features are matched against how each garment's fabric behaves, by fabric family and fit intent, to land on a size.</p>
+        <p>Merchants pay 50p plus 1.5% of the item price, only on orders the customer keeps. No install fee, no subscription. The pricing ties the product to the one number the merchant cares about: fewer size-related returns.</p>
         <p>I was brought in to design the whole product surface: the merchant dashboard where stores set up and monitor Kinesize, the fit widget that sits on their product pages, and the marketing site that sells it to them.</p>
 
         <aside class="cs-callout">
@@ -80,6 +81,10 @@
           <p>Before design, I studied Textile Technology and worked as a product developer on Levi's at Arvind Limited. I've sat in fit sessions, argued about fabric stretch percentages, and seen what a wrong grading decision does to returns. Kinesize's core idea, that fabric family and fit intent matter as much as body measurements, was a problem I already understood from the manufacturing side.</p>
         </aside>
       </div>
+      <figure class="cs-figure">
+        <img src="work/kinesize/product-map.png" alt="Kinesize product map and site structure: branches for Problem (fit returns dominate apparel, static charts miss movement), How it works (on-device pose capture, movement features, fabric behaviour per item), Pricing (50p plus 1.5% of price, only on kept orders, no install or subscription), Moat (outcome-labelled dataset, fabric library by family, GDPR-native by design) and Market (UK Shopify activewear, Europe and US next, default sizing layer), beside a website sitemap of Home, How it works, Pricing, Privacy, Result, Docs and Company" loading="lazy" />
+        <figcaption>Discovery output: the product map I built from the brief, and the sitemap it produced for the marketing site. Privacy got its own page because on-device capture is the pitch, not a footnote.</figcaption>
+      </figure>
     </section>
 
     <!-- ================= WHAT I DESIGNED ================= -->
@@ -109,9 +114,10 @@
           <div class="cs-card">
             <h3>Marketing site</h3>
             <ul>
-              <li>Landing page for merchants and a brands page</li>
+              <li>Seven pages: Home, How it works, Pricing, Privacy, Result, Docs, Company</li>
               <li>Pricing calculator for the per-kept-order model</li>
               <li>Four colour directions explored before committing</li>
+              <li>Approved by the client with no revisions</li>
             </ul>
           </div>
         </div>
@@ -179,8 +185,8 @@
     <section class="cs-section" id="outcome">
       <div class="cs-wrap">
         <h2 class="cs-h2"><span class="cs-num">07</span>Outcome</h2>
-        <p>The dashboard and marketing site reached dev-ready, with annotated handoff pages and a prototype of the setup-to-live flow. <mark class="todo">add what was built, if anything, and any founder or developer feedback as a quote</mark></p>
-        <p>The company wound down before launch, so there are no live metrics. If it had shipped, these are the numbers I'd have watched first:</p>
+        <p>The marketing site was reviewed and approved by the client without a single revision request. The dashboard and fit widget reached dev-ready, with annotated handoff pages and a prototype of the setup-to-live flow. The project was then dropped as the company wound down, before anything was built.</p>
+        <p>So there are no live metrics. If it had shipped, these are the numbers I'd have watched first:</p>
         <ul class="cs-list">
           <li><strong>Setup completion rate and time to go live.</strong> The checklist exists to get this number up. The landing page promises most stores go live the same afternoon.</li>
           <li><strong>Recommendation completion rate.</strong> How many shoppers who open the widget finish it. If this is low, the widget is asking too much.</li>
