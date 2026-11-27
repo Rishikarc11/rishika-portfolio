@@ -668,3 +668,17 @@ mark.todo{background:#FFE98A;color:#3A3000;padding:1px 5px;border-radius:4px;fon
   .cs-timeline li::before{left:0;}
   .cs-tl-when{text-align:left;}
 }
+
+/* Case study: phone groups and title suffix */
+.cs-title-sub{display:block;font-family:var(--font-sans);font-weight:500;font-size:clamp(1.1rem,2vw,1.5rem);letter-spacing:.14em;text-transform:uppercase;color:var(--burnt-orange);margin-top:6px;}
+.cs-phones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start;}
+.cs-phones--2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:720px;margin:0 auto;}
+.cs-phones img{border-radius:22px;}
+@media(max-width:960px){
+  .cs-phones{gap:12px;}
+  .cs-phones img{border-radius:14px;}
+}
+@media(max-width:560px){
+  .cs-phones{grid-template-columns:1fr 1fr;}
+  .cs-phones img:nth-child(3){display:none;}
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aladdin Genie — Case Study — Rishika Choudhary</title>
+  <meta name="description" content="Case study: Genie, the AI trip planner inside Aladdin. A conversational planner that checks your visa before it plans your trip, designed for mobile and web by Rishika Choudhary." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://rishikarc11.github.io/rishika-portfolio/aladdin.html" />
+  <meta property="og:title" content="Aladdin Genie — Case Study — Rishika Choudhary" />
+  <meta property="og:description" content="An AI trip planner that checks your visa before it plans your trip. Conversational planning for mobile and web, designed to developer handoff." />
+  <meta property="og:image" content="https://rishikarc11.github.io/rishika-portfolio/work/aladdin/cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="cs-body">
+
+  <header class="cs-topbar">
+    <a href="index.html#projects" class="cs-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      All projects
+    </a>
+    <a href="index.html" class="cs-brand">
+      <span class="brand-breathe-dot" aria-hidden="true"></span>
+      <span>rishika</span>
+    </a>
+    <a href="index.html#contact" class="cs-topbar-contact">Contact</a>
+  </header>
+
+  <!-- DRAFT NOTE: delete this block before publishing -->
+  <div class="cs-draft-note" role="note">
+    <strong>Draft.</strong> Yellow highlights are details only you can confirm. Replace or remove each one, then delete this note.
+  </div>
+
+  <main class="cs-main">
+
+    <!-- ================= HERO ================= -->
+    <section class="cs-hero">
+      <div class="cs-wrap">
+        <div class="meta-label">
+          <span class="sage-dot-sm" aria-hidden="true"></span>
+          <span>CASE STUDY · AI TRAVEL · MOBILE + WEB</span>
+        </div>
+        <h1 class="cs-title">Aladdin<span class="cs-title-sub">Genie</span></h1>
+        <p class="cs-lede">An AI trip planner that checks your visa before it plans your trip. A conversational planner that builds a bookable, fully editable itinerary, designed for iOS and web.</p>
+
+        <dl class="cs-facts">
+          <div><dt>Role</dt><dd>Product designer, end to end: flows, conversation design, UI, design system, handoff</dd></div>
+          <div><dt>Client</dt><dd>Hire My Idea <mark class="todo">confirm wording</mark></dd></div>
+          <div><dt>Timeline</dt><dd><mark class="todo">from Figma version history</mark></dd></div>
+          <div><dt>Team</dt><dd><mark class="todo">e.g. founder, 2 developers, me</mark></dd></div>
+          <div><dt>Surfaces</dt><dd>iOS app and responsive web, same flow on both</dd></div>
+          <div><dt>Status</dt><dd>Version 1 designed to handoff, dev-ready. The company wound down before launch.</dd></div>
+        </dl>
+      </div>
+
+      <figure class="cs-figure cs-figure--wide">
+        <div class="cs-phones">
+          <img src="work/aladdin/chat.jpg" alt="Genie chat: user asks for a 15-day trip to Japan, Genie asks where they are starting from, who is coming and what their vibe is, with tap-to-answer chips, then offers a destinations card" loading="eager" />
+          <img src="work/aladdin/destinations.jpg" alt="Select destinations screen with Relaxed, Balanced and Fast route options and a stack of destination cards for Tokyo, Kyoto, Osaka, Hakone and more, each with a Select button" loading="eager" />
+          <img src="work/aladdin/overview.png" alt="Trip view with a route map at the top and a 15-day itinerary overview listing each day's stops" loading="eager" />
+        </div>
+        <figcaption>Ask, choose, get a trip. Chat, destination selection and the itinerary overview on iOS.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= CONTEXT ================= -->
+    <section class="cs-section" id="problem">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">01</span>The problem</h2>
+        <p>AI trip planners are good at generating a dreamy itinerary and quiet about whether you're allowed to take it. For an Indian passport holder, or anyone outside the visa-free club, the first question isn't "Tokyo or Kyoto?" but "can I get in, and how long will that take?" Most planners never ask. The user finds out after they've fallen in love with the plan, sometimes after they've booked.</p>
+        <p>Aladdin's brief was an AI-first travel app where Genie, the planner, takes you from a one-line request to a booked trip: destinations, stays, transport between cities, day-by-day experiences, flights and payment. My job was the Genie flow across iOS and web, plus the surrounding app.</p>
+        <p>The design question I kept coming back to: how does a conversational planner stay fast and delightful while being honest about the boring, blocking stuff first?</p>
+
+        <aside class="cs-callout">
+          <h3>The gap we chose</h3>
+          <p>Layla and the other AI planners we studied all do roughly the same thing well: chat in, itinerary out, hotels and flights attached. None of them treat the traveller's passport as an input. Genie does. It asks for your country of residence and where you are now, lets you upload your passport and visas, and uses that to decide what to suggest and what to warn you about.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= WHAT I DESIGNED ================= -->
+    <section class="cs-section" id="designed">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">02</span>What I designed</h2>
+        <p>Genie is the spine of the app. This case study focuses on it. The rest of Aladdin, Home, Explore, Trips, Stays, Flights, Profile and Community, was designed alongside but gets a sentence here, not a section.</p>
+        <div class="cs-grid-3">
+          <div class="cs-card">
+            <h3>Conversation</h3>
+            <ul>
+              <li>Opening prompt and clarifying questions with tap-to-answer chips</li>
+              <li>Visa check and visa-guidance card before any itinerary</li>
+              <li>Thinking states, edit and regenerate on any message</li>
+              <li>Chat and Trip as two views of the same plan</li>
+            </ul>
+          </div>
+          <div class="cs-card">
+            <h3>Trip builder</h3>
+            <ul>
+              <li>Destination selection with Relaxed, Balanced and Fast route pacing</li>
+              <li>Stay details per leg, modify routes with transport per hop</li>
+              <li>Day-by-day itinerary with swap, remove and add experience</li>
+              <li>Route map, download and share</li>
+            </ul>
+          </div>
+          <div class="cs-card">
+            <h3>Booking and web</h3>
+            <ul>
+              <li>Flights, stays, payment method, booking confirmed, ticket</li>
+              <li>Same flow on web as a three-pane layout: chat, plan, map</li>
+              <li>Design system shared across iOS and web</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DECISION 1 ================= -->
+    <section class="cs-section" id="decision-1">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">03</span>Decision one: visa before itinerary</h2>
+        <p>The obvious flow is to generate the trip and mention the visa somewhere at the end. It demos beautifully and sets people up to be disappointed. I flipped it. When a destination needs a visa the user doesn't hold, Genie says so before it builds anything, in one sentence, with two chips: "Yes, it's valid" or "No, I don't have one".</p>
+        <p>If the answer is no, Genie doesn't stop. It still plans the full trip, and it drops a visa card into the conversation: processing time, maximum stay, passport validity rule, approximate fee, and a Start Application button that opens the official application centre. Most importantly, it does the date maths: "On track for Jan 5. Apply by Dec 12." Then it offers to slot that deadline into the trip timeline.</p>
+        <p>Uploading a passport and visas works in the other direction too. Genie unlocks visa-free and visa-on-arrival destinations for that passport, so "where can I go next month?" gets an answer that's actually true for you.</p>
+        <p class="cs-alt"><strong>Rejected:</strong> a visa badge on the destination card with a link to a help page. Accurate, but it treats the hardest step of the trip as a footnote and leaves the user to work out the timing alone. <mark class="todo">add anything the founder said about this trade-off</mark></p>
+      </div>
+      <figure class="cs-figure">
+        <div class="cs-phones cs-phones--2">
+          <img src="work/aladdin/visa.png" alt="Genie chat: before building the trip Genie says Japan needs a tourist visa for Indian passports and asks if the user has one; after the user says no, Genie shows a visa card with processing time, max stay, passport validity, fee, and a Start Application button, then offers to plan the trip around the visa deadline" loading="lazy" />
+          <img src="work/aladdin/chat.jpg" alt="Genie chat opening: three clarifying questions, starting point, who is coming and vibe, with suggested answer chips" loading="lazy" />
+        </div>
+        <figcaption>Left: the visa check and guidance card, with the application deadline calculated from the trip date. Right: the clarifying questions that follow.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= DECISION 2 ================= -->
+    <section class="cs-section" id="decision-2">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">04</span>Decision two: chat asks, cards do the heavy lifting</h2>
+        <p>A chat interface is great for intent and terrible for comparison. Nobody wants to pick six cities out of a paragraph. So Genie's conversation stays short and asks only what it needs: where you're starting from, who's coming, what your vibe is, with chips so the answer is one tap. Then it hands off to a card. "Top destinations for your trip. Open."</p>
+        <p>Opening the card drops the user into a purpose-built screen: a stack of destination cards with photos, dates and price range, a Relaxed, Balanced or Fast pace toggle that changes the recommended route and stop count, and a Generate Trip button that returns them to the conversation with the choice made. The chat remembers the choice as a message, so the thread stays a readable record of the plan.</p>
+        <p>The same pattern repeats for stays, routes, experiences and booking. Chat for intent, cards for decisions, and a Chat / Trip toggle at the bottom so the user can flip between the conversation and the structured plan without losing either.</p>
+        <p class="cs-alt"><strong>Why this matters for an AI product:</strong> it keeps the model's job narrow. Genie suggests and explains. The user chooses in an interface built for choosing. Fewer hallucinated bookings, fewer "wait, what did I agree to" moments.</p>
+      </div>
+      <figure class="cs-figure cs-figure--wide">
+        <img src="work/aladdin/web-day.jpg" alt="Aladdin web: three-pane layout with the Genie chat on the left, the Day 1 itinerary with experience cards in the middle, and a route map on the right" loading="lazy" />
+        <figcaption>On web the pattern becomes three panes: the conversation, the plan, and the map, all live at once.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= DECISION 3 ================= -->
+    <section class="cs-section" id="decision-3">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">05</span>Decision three: nothing Genie generates is locked</h2>
+        <p>Trust in an AI planner comes from being able to overrule it cheaply. If changing one hotel means regenerating the whole trip, people stop trusting the trip. So every layer of the plan is editable in place.</p>
+        <ul class="cs-list">
+          <li><strong>Destinations:</strong> select or deselect any stop, or switch the pace and let Genie re-route.</li>
+          <li><strong>Routes:</strong> a Modify Routes sheet shows each leg with its transport, duration and price. Tap a leg to swap plane for train, or change the order.</li>
+          <li><strong>Stays:</strong> a Trip Overview sheet lists every leg with origin, mode, destination and date. Each one can be removed or re-dated.</li>
+          <li><strong>Experiences:</strong> every item in a day has swap and remove, plus Add Experience, with search by food, nightlife or culture.</li>
+          <li><strong>Dates:</strong> change them in chat ("make it Jan 5 to 20") and Genie regenerates with everything else preserved.</li>
+        </ul>
+        <p>The itinerary itself is shown two ways: a scannable overview, one line per day, and a day view with a note, the experiences, and a map with numbered stops. Download and share sit in the header because a trip that lives only inside an app isn't a trip you can send to the person coming with you.</p>
+      </div>
+      <figure class="cs-figure">
+        <div class="cs-phones cs-phones--2">
+          <img src="work/aladdin/routes.jpg" alt="Modify Routes sheet: a world map with the route and a vertical list of legs, London to Tokyo by plane, Tokyo to Hakone by train, each with duration and price and a chevron to change it" loading="lazy" />
+          <img src="work/aladdin/stays.png" alt="Select Your Stay Details sheet: a Trip Overview list of six legs with origin, transport icon, destination and date, each removable, with an Apply button" loading="lazy" />
+        </div>
+        <figcaption>Routes and stays are edited in sheets over the conversation, so the user never leaves the plan to change it.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= CRAFT ================= -->
+    <section class="cs-section" id="craft">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">06</span>Craft and system</h2>
+        <ul class="cs-list">
+          <li><strong>Genie has a voice.</strong> Warm, a little playful ("Japan for 15 days? Now we're talking"), and direct when it matters ("Before I build it, Japan needs a tourist visa"). The tone was written as part of the design, not left for copy later.</li>
+          <li><strong>One system, two platforms.</strong> The iOS flow and the web flow share components, colour and type. On web the chat stays on the left and the cards expand into panes instead of sheets, so nothing has to be relearned.</li>
+          <li><strong>Iteration is visible in the file.</strong> A second version of onboarding, colour direction explorations, and an enhanced version of flight booking all sit alongside the shipped-to-handoff versions. <mark class="todo">say briefly what changed in V2 onboarding and why</mark></li>
+          <li><strong>Competitor reference, kept honest.</strong> We mapped Layla's flow screen by screen and used it as the baseline to beat, not to copy. The visa layer and the editable-everything plan are where Genie diverges.</li>
+        </ul>
+      </div>
+      <figure class="cs-figure cs-figure--wide">
+        <img src="work/aladdin/web-overview.jpg" alt="Aladdin web: Genie chat on the left, the 15-day itinerary overview in the middle, and a map with the numbered route on the right" loading="lazy" />
+        <figcaption>The itinerary overview on web, with the route drawn on the map.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= OUTCOME ================= -->
+    <section class="cs-section" id="outcome">
+      <div class="cs-wrap">
+        <h2 class="cs-h2"><span class="cs-num">07</span>Outcome</h2>
+        <p>Version 1 of Genie reached dev-ready on both iOS and web, with a clickable prototype of the chat-to-booking flow and annotated handoff pages. <mark class="todo">add what was built, if anything, and any founder or developer feedback as a quote</mark></p>
+        <p>The company wound down before launch, so there are no usage numbers. If it had shipped, these are the ones I'd have watched first:</p>
+        <ul class="cs-list">
+          <li><strong>Trips abandoned at the visa step.</strong> If this is high, the honesty is costing us. If it's low and bookings rise, it's earning trust.</li>
+          <li><strong>Edits per trip before booking.</strong> A healthy number means people are customising. Zero means they don't believe they can.</li>
+          <li><strong>Chat to first card, and card to generated trip.</strong> How quickly intent becomes a plan.</li>
+        </ul>
+        <h3 class="cs-h3">What I'd do next</h3>
+        <ul class="cs-list">
+          <li>Test the visa conversation with five travellers who've been refused or delayed before. Their reaction to "apply by Dec 12" is the whole product.</li>
+          <li>Design the group case properly. "Who's coming along?" currently changes recommendations, not permissions. Shared trips with co-editing is the obvious next layer.</li>
+          <li>Make the visa card live: pull processing times from the application centres rather than a static estimate.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="cs-footer">
+      <div class="cs-wrap cs-footer-inner">
+        <a href="kinesize.html" class="cs-footer-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          Previous: Kinesize
+        </a>
+        <a href="index.html#contact" class="cs-footer-link cs-footer-link--primary">
+          Get in touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+      <p class="cs-copyright">2026 © Rishika Choudhary. Product names belong to their respective owners. Destination photos, prices and visa details shown in mockups are illustrative placeholders.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
